@@ -1,8 +1,4 @@
-<img src="https://github.com/stayahead-training/shared/blob/master/stayahead.png" />
-
 # Advanced OOP Exercises
-
-[<<< back](../README.md)
 
 1. Create two files, one named classes.py and the other named classes_test.py. Each of the classes described below should be defined in classes.py and tested in classes_test.py. Each class should be named as you see fit.
 
@@ -47,4 +43,3 @@ Pandas is a popular Python package used for data analysis. The principle class i
 
     `orders["total price"].mean()`
 
-[<<< back](../README.md)

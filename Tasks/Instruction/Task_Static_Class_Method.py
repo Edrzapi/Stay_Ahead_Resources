@@ -19,7 +19,6 @@ class Vehicle:
     # - contains at least 2 characters
 
 
-
 # Use the class method
 car = Vehicle.from_string("BMW,2025")
 
