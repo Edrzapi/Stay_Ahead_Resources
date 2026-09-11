@@ -1,36 +1,24 @@
 prices = [25, 80, 120, 15, 300, 60]
 
 
-def get_expensive_prices(prices):
+# HOF with function condition (return true/false)
+def filter_prices(prices, condition):
     result = []
-
     for price in prices:
-        if price >= 100:
+        if condition(price):
             result.append(price)
-
     return result
 
 
-def get_cheap_prices(prices):
-    result = []
+def get_expensive_prices(price):
+    return price >= 100
 
-    for price in prices:
-        if price < 50:
-            result.append(price)
+def get_cheap_prices(price):
+    return price < 50
 
-    return result
+def get_mid_range_prices(price):
+    return 50 <= price < 100
 
-
-def get_mid_range_prices(prices):
-    result = []
-
-    for price in prices:
-        if 50 <= price < 100:
-            result.append(price)
-
-    return result
+print(filter_prices(prices, lambda price: price % 2 != 0 and get_mid_range_prices(price)))
 
 
-print(get_expensive_prices(prices))
-print(get_cheap_prices(prices))
-print(get_mid_range_prices(prices))
